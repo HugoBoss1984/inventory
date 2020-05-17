@@ -7,19 +7,21 @@ import { AdminComponent } from './components/admin/admin.component';
 import { AdminModule } from './components/admin/admin.module';
 import { MaterialListModule } from './components/material-list/material-list.module';
 import { EmployeesModule } from './components/employees/employees.module';
+import { AssignmentsModule } from './components/assignments/assignmentss.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AdminModule,
     MaterialListModule,
-    EmployeesModule
+    EmployeesModule,
+    AssignmentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

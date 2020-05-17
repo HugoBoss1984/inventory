@@ -28,7 +28,7 @@ app.get('/getMaterials', function(req, res, next) {
     } else {
       res.send(result)
     }
-    console.log(result);
+    // console.log(result);
   });
 })
 
@@ -43,7 +43,7 @@ app.get('/getEmployees', function(req, res, next) {
     } else {
       res.send(result)
     }
-    console.log(result);
+    // console.log(result);
   });
 })
 
