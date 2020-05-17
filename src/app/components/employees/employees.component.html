@@ -1,1 +1,35 @@
-<p>employees works!</p>
+
+<div class="row">
+    <div class="col mt-2">
+        <h2 class="text-center">Elenco dipendenti aziendale</h2>
+
+        <form novalidate>
+            <table class="table table-bordered table-striped p-2">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cognome</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of rows; let i=index">
+                    <td>
+                        {{row.id}}
+                    </td>
+                    <td>
+                        {{row.cognome}}
+                    </td>
+                    <td>
+                        {{row.nome}}
+                    </td>
+                    <td>
+                        {{row.email}}
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </form>
+    </div>
+</div>

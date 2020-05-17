@@ -17,4 +17,8 @@ export class DatasourceMysqlService {
   getMaterials(): Observable<any[]> {
     return this.http.get<any[]>(this.baseUrl + "getMaterials"); 
   }
+
+  getEmployees(): Observable<any[]> {
+    return this.http.get<any[]>(this.baseUrl + "getEmployees"); 
+  }
 }

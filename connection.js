@@ -17,13 +17,28 @@ const app = express()
   .use(bodyParser.json())
 //   .use(events(connection));
 
-// Get Appointment by ID request
+// Get all Materials
 app.get('/getMaterials', function(req, res, next) {
   connection.query("SELECT * FROM anagrafica_materiale", function (err, result, fields) {
     if (err || !result) {
       res.send({
         code: 404,
         message: `Angrafica materiale non trovata`
+      })
+    } else {
+      res.send(result)
+    }
+    console.log(result);
+  });
+})
+
+// Get all Employees
+app.get('/getEmployees', function(req, res, next) {
+  connection.query("SELECT * FROM anagrafica_risorsa", function (err, result, fields) {
+    if (err || !result) {
+      res.send({
+        code: 404,
+        message: `Angrafica risorsa non trovata`
       })
     } else {
       res.send(result)
