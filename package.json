@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "cors": "2.8.5",
     "events": "^3.1.0",
     "express": "4.17.1",
